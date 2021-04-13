@@ -20,6 +20,7 @@ class MyAccountViewModelTests: QuickSpec {
           it("should contain the following properties") {
             expect(viewModel.entity.name).to(equal("Yon"))
             expect(viewModel.entity.currency).to(equal(100.44))
+            expect(viewModel.formattedDebtCurrency).to(equal("$100.44"))
             expect(viewModel.entity.debtStatus).to(equal(DebtStatus.none.rawValue))
           }
         }
@@ -31,6 +32,7 @@ class MyAccountViewModelTests: QuickSpec {
           it("should contain the following properties") {
             expect(viewModel.entity.name).to(equal("Yon"))
             expect(viewModel.entity.currency).to(equal(-100.44))
+            expect(viewModel.formattedDebtCurrency).to(equal("-$100.44"))
             expect(viewModel.entity.debtStatus).to(equal(DebtStatus.some.rawValue))
           }
         }
@@ -42,6 +44,7 @@ class MyAccountViewModelTests: QuickSpec {
           it("should contain the following properties") {
             expect(viewModel.entity.name).to(equal("Yon"))
             expect(viewModel.entity.currency).to(equal(-1000.44))
+            expect(viewModel.formattedDebtCurrency).to(equal("-$1000.44"))
             expect(viewModel.entity.debtStatus).to(equal(DebtStatus.high.rawValue))
           }
         }

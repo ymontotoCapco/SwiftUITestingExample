@@ -8,16 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		24E6872A26288EED00369305 /* SwiftUIUnitTestDemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24E6872926288EED00369305 /* SwiftUIUnitTestDemoApp.swift */; };
-		24E6872C26288EED00369305 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24E6872B26288EED00369305 /* ContentView.swift */; };
 		24E6872E26288EF500369305 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 24E6872D26288EF500369305 /* Assets.xcassets */; };
 		24E6873126288EF500369305 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 24E6873026288EF500369305 /* Preview Assets.xcassets */; };
 		24E6874726288EF600369305 /* SwiftUIUnitTestDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24E6874626288EF600369305 /* SwiftUIUnitTestDemoUITests.swift */; };
 		24E6875F26288F9800369305 /* MockEntities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24E6875E26288F9800369305 /* MockEntities.swift */; };
-		24E6876726288FBB00369305 /* MockEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24E6876626288FBB00369305 /* MockEntity.swift */; };
-		24E6876C26288FE500369305 /* MyAccountViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24E6876B26288FE500369305 /* MyAccountViewModel.swift */; };
 		24E6877B262890AA00369305 /* Quick in Frameworks */ = {isa = PBXBuildFile; productRef = 24E6877A262890AA00369305 /* Quick */; };
 		24E6877E262890FA00369305 /* Nimble in Frameworks */ = {isa = PBXBuildFile; productRef = 24E6877D262890FA00369305 /* Nimble */; };
 		24E687852628911900369305 /* SwiftUIUnitTestDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24E6873B26288EF600369305 /* SwiftUIUnitTestDemoTests.swift */; };
+		24E687AC2628D7EC00369305 /* MockEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24E687A72628D7EC00369305 /* MockEntity.swift */; };
+		24E687AD2628D7EC00369305 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24E687A92628D7EC00369305 /* ContentView.swift */; };
+		24E687AE2628D7EC00369305 /* MyAccountViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24E687AB2628D7EC00369305 /* MyAccountViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,7 +40,6 @@
 /* Begin PBXFileReference section */
 		24E6872626288EED00369305 /* SwiftUIUnitTestDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUIUnitTestDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		24E6872926288EED00369305 /* SwiftUIUnitTestDemoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIUnitTestDemoApp.swift; sourceTree = "<group>"; };
-		24E6872B26288EED00369305 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		24E6872D26288EF500369305 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		24E6873026288EF500369305 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		24E6873226288EF500369305 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -51,8 +50,9 @@
 		24E6874626288EF600369305 /* SwiftUIUnitTestDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIUnitTestDemoUITests.swift; sourceTree = "<group>"; };
 		24E6874826288EF600369305 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		24E6875E26288F9800369305 /* MockEntities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockEntities.swift; sourceTree = "<group>"; };
-		24E6876626288FBB00369305 /* MockEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockEntity.swift; sourceTree = "<group>"; };
-		24E6876B26288FE500369305 /* MyAccountViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyAccountViewModel.swift; sourceTree = "<group>"; };
+		24E687A72628D7EC00369305 /* MockEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockEntity.swift; sourceTree = "<group>"; };
+		24E687A92628D7EC00369305 /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		24E687AB2628D7EC00369305 /* MyAccountViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyAccountViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,10 +106,10 @@
 		24E6872826288EED00369305 /* SwiftUIUnitTestDemo */ = {
 			isa = PBXGroup;
 			children = (
+				24E687A62628D7EC00369305 /* Model */,
+				24E687A82628D7EC00369305 /* View */,
+				24E687AA2628D7EC00369305 /* View Model */,
 				24E6875A26288F6C00369305 /* Mock */,
-				24E6875926288F6000369305 /* Model */,
-				24E6875826288F5400369305 /* View Model */,
-				24E6875726288F4B00369305 /* View */,
 				24E6872926288EED00369305 /* SwiftUIUnitTestDemoApp.swift */,
 				24E6872D26288EF500369305 /* Assets.xcassets */,
 				24E6873226288EF500369305 /* Info.plist */,
@@ -144,33 +144,6 @@
 			path = SwiftUIUnitTestDemoUITests;
 			sourceTree = "<group>";
 		};
-		24E6875726288F4B00369305 /* View */ = {
-			isa = PBXGroup;
-			children = (
-				24E6872B26288EED00369305 /* ContentView.swift */,
-			);
-			name = View;
-			path = "New Group";
-			sourceTree = "<group>";
-		};
-		24E6875826288F5400369305 /* View Model */ = {
-			isa = PBXGroup;
-			children = (
-				24E6876B26288FE500369305 /* MyAccountViewModel.swift */,
-			);
-			name = "View Model";
-			path = "New Group1";
-			sourceTree = "<group>";
-		};
-		24E6875926288F6000369305 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				24E6876626288FBB00369305 /* MockEntity.swift */,
-			);
-			name = Model;
-			path = "New Group2";
-			sourceTree = "<group>";
-		};
 		24E6875A26288F6C00369305 /* Mock */ = {
 			isa = PBXGroup;
 			children = (
@@ -185,6 +158,33 @@
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
+		};
+		24E687A62628D7EC00369305 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				24E687A72628D7EC00369305 /* MockEntity.swift */,
+			);
+			name = Model;
+			path = SwiftUIUnitTestDemo/Model;
+			sourceTree = SOURCE_ROOT;
+		};
+		24E687A82628D7EC00369305 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				24E687A92628D7EC00369305 /* ContentView.swift */,
+			);
+			name = View;
+			path = SwiftUIUnitTestDemo/View;
+			sourceTree = SOURCE_ROOT;
+		};
+		24E687AA2628D7EC00369305 /* View Model */ = {
+			isa = PBXGroup;
+			children = (
+				24E687AB2628D7EC00369305 /* MyAccountViewModel.swift */,
+			);
+			name = "View Model";
+			path = "SwiftUIUnitTestDemo/View Model";
+			sourceTree = SOURCE_ROOT;
 		};
 /* End PBXGroup section */
 
@@ -325,11 +325,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				24E6872C26288EED00369305 /* ContentView.swift in Sources */,
 				24E6872A26288EED00369305 /* SwiftUIUnitTestDemoApp.swift in Sources */,
-				24E6876726288FBB00369305 /* MockEntity.swift in Sources */,
-				24E6876C26288FE500369305 /* MyAccountViewModel.swift in Sources */,
 				24E6875F26288F9800369305 /* MockEntities.swift in Sources */,
+				24E687AD2628D7EC00369305 /* ContentView.swift in Sources */,
+				24E687AE2628D7EC00369305 /* MyAccountViewModel.swift in Sources */,
+				24E687AC2628D7EC00369305 /* MockEntity.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
